@@ -11,13 +11,13 @@ Github Action that handles the following:
 
 (Required) PagerDuty API user token.
 
+### `pagerduty-schedule-id`
+
+(Required) PagerDuty schedule ID to get the on-call perso from.
+
 ### `slack-webhook-url`
 
 (Required) URL of the Slack webhook to send the message to.
-
-### `slack-channel`
-
-(Required) Slack channel to send the message to.
 
 ## Example Usage
 
@@ -38,5 +38,4 @@ jobs:
         with:
           pagerduty-api-token: ${{ secrets.PAGERDUTY_API_TOKEN }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          slack-channel: "my-channel"
 ```

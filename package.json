@@ -24,6 +24,7 @@
   "homepage": "https://github.com/loopsocial/pagerduty-oncall-slack-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
+    "@pagerduty/pdjs": "^2.2.4",
     "axios": "^0.26.0"
   }
 }
