@@ -1,0 +1,29 @@
+{
+  "name": "pagerduty-oncall-slack-action",
+  "version": "0.0.1",
+  "description": "Github Action that posts the PagerDuty oncall person to Slack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loopsocial/pagerduty-oncall-slack-action.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "firework",
+    "loopsocial"
+  ],
+  "author": "Deric Walintukan <deric@fireworkhq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loopsocial/pagerduty-oncall-slack-action/issues"
+  },
+  "homepage": "https://github.com/loopsocial/pagerduty-oncall-slack-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "axios": "^0.26.0"
+  }
+}
