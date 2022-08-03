@@ -39,14 +39,14 @@ const constructSlackMessage = (onCallName) => {
         "type": "header",
         "text": {
           "type": "plain_text",
-          "text": `@here ${onCallName}, you are now on active duty as the Release Cop 👮🏻‍♂️`
+          "text": `${onCallName}, you are now on active duty as the Release Cop 🚔`
         }
       },
       {
         "type": "section",
         "text": {
           "type": "mrkdwn",
-          "text": "Please fulfill your duty in making sure the current Release Candidate is in motion and unblocked."
+          "text": "@here Please fulfill your duty in making sure the current Release Candidate is in motion and unblocked."
         }
       }
     ]
