@@ -22,7 +22,7 @@ const getInput = (key) => {
   const scheduleId = core.getInput('pagerduty-schedule-id')
   
   const pd = api({ token: apiToken })
-  const { oncalls } = await pd.get(`/oncalls?schedule_ids%5B%5D=${scheduleId}`)
+  const { data: { oncalls } } = await pd.get(`/oncalls?schedule_ids%5B%5D=${scheduleId}`)
   if (oncalls.length === 0) throw Error('Schedule ID has no on-calls.')
   return oncalls[0].user.summary
 }
