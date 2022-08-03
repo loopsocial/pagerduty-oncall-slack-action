@@ -1,14 +1,14 @@
 {
-  "name": "pagerduty-oncall-slack-action",
+  "name": "release-cop-notify-action",
   "version": "0.0.1",
-  "description": "Github Action that posts the PagerDuty oncall person to Slack.",
+  "description": "Github Action that notifies the new Release Cop to Slack.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loopsocial/pagerduty-oncall-slack-action.git"
+    "url": "git+https://github.com/loopsocial/release-cop-notify-action.git"
   },
   "keywords": [
     "github",
@@ -19,9 +19,9 @@
   "author": "Deric Walintukan <deric@fireworkhq.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/loopsocial/pagerduty-oncall-slack-action/issues"
+    "url": "https://github.com/loopsocial/release-cop-notify-action/issues"
   },
-  "homepage": "https://github.com/loopsocial/pagerduty-oncall-slack-action#readme",
+  "homepage": "https://github.com/loopsocial/release-cop-notify-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@pagerduty/pdjs": "^2.2.4",

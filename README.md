@@ -1,9 +1,9 @@
-# PagerDuty OnCall Slack Action
+# Release Cop Notify Action
 
 Github Action that handles the following:
 
-1. Calls the PagerDuty API to get the on-call person on schedule.
-2. Notifies a Slack channel with the on-call person.
+1. Calls the PagerDuty API to get the on-call person.
+2. Posts a Slack message to nominate the Release Cop.
 
 ## Inputs
 
@@ -22,20 +22,21 @@ Github Action that handles the following:
 ## Example Usage
 
 ```yaml
-name: PagerDuty OnCall Notify
+name: Release Cop Notify
 
 on:
   schedule:
     - '0 0 * * 1-5'
 
 jobs:
-  pagerduty_oncall_notify:
+  release_cop_notify:
     runs-on: ubuntu-latest
-    name: PagerDuty OnCall Notify
+    name: Release Cop Notify
     steps:
       - name: Notify
-        uses: loopsocial/pagerduty-oncall-slack-action@v1.0.0
+        uses: loopsocial/release-cop-notify-action@v1.0.0
         with:
           pagerduty-api-token: ${{ secrets.PAGERDUTY_API_TOKEN }}
+          pagerduty-schedule-id: ${{ secrets.PAGERDUTY_SCHEDULE_ID }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
 ```

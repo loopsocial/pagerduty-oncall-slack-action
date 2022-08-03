@@ -1,4 +1,4 @@
-name: "PagerDuty OnCall Slack Action"
+name: "Release Cop Notify Action"
 description: "Github Action that posts the PagerDuty oncall person to Slack."
 inputs:
   pagerduty-api-token:
