@@ -1,0 +1,15 @@
+name: "PagerDuty OnCall Slack Action"
+description: "Github Action that posts the PagerDuty oncall person to Slack."
+inputs:
+  pagerduty-api-token:
+    description: "PagerDuty API user token"
+    required: true
+  slack-webhook-url:
+    description: "URL to send Slack webhooks to"
+    required: true
+  slack-channel:
+    description: "Slack channel to send the message to"
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
