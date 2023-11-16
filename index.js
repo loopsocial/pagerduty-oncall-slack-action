@@ -40,7 +40,7 @@ const getOpsGenieOnCallName = async () => {
 
 /**
  * Constructs the Slack message JSON payload.
- * @param {string} onCallName PagerDuty on-call name.
+ * @param {string} onCallName On-call name.
  * @returns {string} Returns the Slack message JSON.
  */
 const constructSlackMessage = (onCallName) => {

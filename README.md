@@ -2,18 +2,18 @@
 
 Github Action that handles the following:
 
-1. Calls the PagerDuty API to get the on-call person.
+1. Calls the OpsGenie API to get the on-call person.
 2. Posts a Slack message to nominate the Release Cop.
 
 ## Inputs
 
-### `pagerduty-api-token`
+### `opsgenie-api-token`
 
-(Required) PagerDuty API user token.
+(Required) OpsGenie API token.
 
-### `pagerduty-schedule-id`
+### `opsgenie-schedule-id`
 
-(Required) PagerDuty schedule ID to get the on-call perso from.
+(Required) OpsGenie Schedule ID to get the on-call person from.
 
 ### `slack-webhook-url`
 
@@ -36,7 +36,7 @@ jobs:
       - name: Notify
         uses: loopsocial/release-cop-notify-action@v1.0.0
         with:
-          pagerduty-api-token: ${{ secrets.PAGERDUTY_API_TOKEN }}
-          pagerduty-schedule-id: ${{ secrets.PAGERDUTY_SCHEDULE_ID }}
+          opsgenie-api-token: ${{ secrets.OPSGENIE_API_KEY }}
+          opsgenie-schedule-id: ${{ secrets.OPSGENIE_SCHEDULE_ID }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
 ```
