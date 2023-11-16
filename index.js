@@ -1,6 +1,7 @@
 const core = require("@actions/core");
 const axios = require("axios");
 
+// Constants
 const OPSGENIE_API_BASE_URL = "https://api.opsgenie.com/v2";
 
 /**

@@ -1,11 +1,11 @@
 name: "Release Cop Notify Action"
 description: "Github Action that notifies the new Release Cop to Slack."
 inputs:
-  pagerduty-api-token:
-    description: "PagerDuty API user token"
+  opsgenie-api-token:
+    description: "OpsGenie API token"
     required: true
-  pagerduty-schedule-id:
-    description: "PagerDuty Schedule ID"
+  opsgenie-schedule-id:
+    description: "OpsGenie Schedule ID"
     required: true
   slack-webhook-url:
     description: "URL to send Slack webhooks to"
