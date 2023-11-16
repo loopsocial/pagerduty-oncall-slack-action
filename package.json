@@ -24,7 +24,6 @@
   "homepage": "https://github.com/loopsocial/release-cop-notify-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@pagerduty/pdjs": "^2.2.4",
     "axios": "^1.6.2"
   }
 }
