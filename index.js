@@ -34,7 +34,7 @@ const getOpsGenieOnCallName = async () => {
   });
 
   // Handle API response
-  if (!onCalls || !onCalls.length) throw Error("No On-Call found for Schedule");
+  if (onCalls.length === 0) throw Error("No On-Call found for Schedule");
   return onCalls[0].name;
 };
 
