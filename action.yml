@@ -1,8 +1,8 @@
 name: "Release Cop Notify Action"
 description: "Github Action that notifies the new Release Cop to Slack."
 inputs:
-  opsgenie-api-token:
-    description: "OpsGenie API token"
+  opsgenie-api-key:
+    description: "OpsGenie API key"
     required: true
   opsgenie-schedule-id:
     description: "OpsGenie Schedule ID"
