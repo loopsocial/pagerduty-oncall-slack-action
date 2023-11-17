@@ -20,7 +20,7 @@ const getInput = (key) => {
  * @returns {string} Returns the OpsGenie Schedule on-call name.
  */
 const getOpsGenieOnCallName = async () => {
-  const apiToken = core.getInput("opsgenie-api-token");
+  const apiKey = core.getInput("opsgenie-api-key");
   const scheduleId = core.getInput("opsgenie-schedule-id");
 
   // Gets the on-call name from OpsGenie API
@@ -29,7 +29,7 @@ const getOpsGenieOnCallName = async () => {
     data: { onCallParticipants: onCalls },
   } = await axios.get(url, {
     headers: {
-      Authorization: `GenieKey ${apiToken}`,
+      Authorization: `GenieKey ${apiKey}`,
     },
   });
 

@@ -7,9 +7,9 @@ Github Action that handles the following:
 
 ## Inputs
 
-### `opsgenie-api-token`
+### `opsgenie-api-key`
 
-(Required) OpsGenie API token.
+(Required) OpsGenie API key.
 
 ### `opsgenie-schedule-id`
 
@@ -36,7 +36,7 @@ jobs:
       - name: Notify
         uses: loopsocial/release-cop-notify-action@v1.0.0
         with:
-          opsgenie-api-token: ${{ secrets.OPSGENIE_API_KEY }}
+          opsgenie-api-key: ${{ secrets.OPSGENIE_API_KEY }}
           opsgenie-schedule-id: ${{ secrets.OPSGENIE_SCHEDULE_ID }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
 ```
